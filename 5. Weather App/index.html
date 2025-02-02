@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!---------------  CSS  --------------------->
+    <!-- Linking external CSS file -->
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Weather Webpage</title>
+
+    <!---------------  IONICONS  --------------------->
+    <!-- Ionicons library for using icons -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+    <!---------------  FAVICON  --------------------->
+    <!-- Adding a favicon for the webpage -->
+    <link rel="icon" href="Icon/favicon.png" type="image/png">
+</head>
+<body>
+    <div class="container">
+        <!---------------  SEARCH BOX  --------------------->
+        <!-- Input field for entering the city name and search button -->
+        <div class="search_box"> 
+            <input type="text" placeholder="Enter a city name" id="city" value="VARANASI" autocomplete="off"/>
+            <button id="search">
+                <!-- Ionicon search icon -->
+                <ion-icon class="icon" name="search"></ion-icon>
+            </button>
+        </div>
+        
+        <!---------------  WEATHER DISPLAY AREA  --------------------->
+        <!-- This div will display weather details dynamically -->
+        <div id="show"></div>
+    </div>
+
+    <!---------------  SCRIPT  --------------------->
+    <!-- Linking external JavaScript file -->
+    <script src="script.js"></script>  
+</body>   
+</html>
